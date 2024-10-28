@@ -59,11 +59,11 @@ int calculaMovimientosPosiblesCaballo(int jugadas) {
 
 
 int main() {
-    long long jugadasCaballo = 32;
+    int jugadasCaballo = 2;
     std::cout << "Numero de jugadas es: " << jugadasCaballo << std::endl;
-    long long movimientos = calculaMovimientosPosiblesCaballo(jugadasCaballo);
+    int movimientos = calculaMovimientosPosiblesCaballo(jugadasCaballo);
     std::cout << "Numero total de movimientos (con repeticiones): " << movimientos << std::endl;
-    long long movimientosUnicos = movimientos-calculaMovimientosPosiblesCaballo(jugadasCaballo-1);
+    int movimientosUnicos = movimientos-calculaMovimientosPosiblesCaballo(jugadasCaballo-1);
     std::cout << "Numero total de movimientos unicos: " << movimientosUnicos << std::endl;
     return 0;
 }
